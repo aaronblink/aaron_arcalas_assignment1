@@ -1,7 +1,57 @@
+
+/*
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+*/
+
 a {
     text-decoration: none;
     color: #191724;
 }
+
+p {
+  color: #191724;
+}
+.left_right {
+  display:flex;
+  flex-direction: row;
+}
+
+.main {
+  width:80%;
+  background-color: #c4a7e7;
+}
+
+.menu2 {
+  min-width: 20%;
+  height: 1000px;
+  background-color: #ebbcba;
+}
+
+.menu2 p{
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.button {
+  color: #191724;
+}
+
+.note_button{
+  display: flex;
+  justify-content: flex-end
+}
+
+.create_button {
+  border: 0;
+  height: 0;
+  background-color: #c4a7e7;
+  color: #191724;
+}
+
 
 nav li{
     padding-left: 20px;
@@ -16,10 +66,10 @@ nav ul{
 }
 
 footer {
-    position: fixed;
-    bottom: 5px;
+  position: fixed;
+  bottom: 5px;
 }
-  
+
 div.footer {
     display: flex;
     flex-direction: row;
@@ -27,37 +77,73 @@ div.footer {
     align-items: flex-end;
 }
 
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
 * {
     box-sizing: border-box;
-}
+  }
   
 /* Create two equal columns that floats next to each other */
 .column1 {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
-  
+
 .column2 {
-float: left;
-padding-top: 20px;
-width: 70%;
-padding: 10px;
-height: 300px; /* Should be removed. Only for demonstration */
+  float: left;
+  padding-top: 20px;
+  width: 70%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
 .row:after {
-content: "";
-display: table;
-clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .menu {
     background-color: white;
 }
-
 .createNote {
     background-color: white;
+}
+
+.notecreate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.del_save_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.save_button , .delete_button {
+  display: flex;
+  color: #191724;
 }
